@@ -1,0 +1,25 @@
+.cs-header-title {
+  color: #0d47a1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(0.08 * calc(100vh - 1.5rem));
+  padding: 0 .75rem;
+
+  h4 {
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 32px;
+
+    &:before {
+      content: '';
+      border-radius: 2px;
+      position: absolute;
+      top: calc(calc(100% - 8px) / 2);
+      left: 0;
+      width: 24px;
+      height: 8px;
+      background: #0d47a1;
+    }
+  }
+}

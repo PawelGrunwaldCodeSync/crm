@@ -1,0 +1,21 @@
+FROM php:8.1-fpm-alpine3.14
+
+WORKDIR /var/www/app
+
+COPY --from=composer:2.2.7 /usr/bin/composer /usr/local/bin/composer
+
+RUN apk update && apk add --no-cache --virtual buildDeps autoconf \
+        git zip unzip \
+    &&  apk del buildDeps
+
+RUN apk update && apk add --no-cache --virtual buildDeps autoconf \
+    &&  docker-php-ext-install \
+        bcmath \
+        pdo_mysql \
+    &&  apk del buildDeps
+
+# Add user for laravel application
+RUN addgroup -S www && adduser -S -G www www \
+    && chown -R www-data:www-data /var/www/app \
+    && chmod -R 777 /var/www/app
+

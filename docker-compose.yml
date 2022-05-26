@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  db:
+    image: mariadb:10.7.3-focal
+    environment:
+      - MARIADB_USER=${DB_USER}
+      - MARIADB_PASSWORD=${DB_PASSWORD}
+      - MARIADB_ROOT_PASSWORD=${DB_PASSWORD_ROOT}
+      - MARIADB_DATABASE=${DB_NAME}
+    ports:
+      - 3306:3306
+    volumes:
+      - database:/var/lib/mysql
+
+  frontend:
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile.dev
+    command: /tmp/run.sh
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend/:/app/
+
+  backend:
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile.dev
+    environment:
+      - APP_NAME=Laravel
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - DB_USER=${DB_USER}
+      - DB_NAME=${DB_NAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+    ports:
+      - 9000:9000
+    volumes:
+      - ./backend/:/var/www/app
+
+  nginx:
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile.dev
+    ports:
+      - 80:80
+    volumes:
+      - ./backend/:/var/www/app
+
+volumes:
+  database:

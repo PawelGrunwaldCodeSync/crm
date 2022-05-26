@@ -1,0 +1,145 @@
+.cs-panel {
+  .cs-panel-body {
+    padding: 0 .75rem;
+
+    .cs-income-box {
+      &.card {
+        border: none;
+        box-shadow: 0 0 6px 0.1px rgba(2,119,189, 1);
+        position: relative;
+
+        .card-header {
+          z-index: 1;
+
+          &:before {
+            position: absolute;
+            background: rgba(2,119,189, 1);
+            content: '';
+            top: 0;
+            left: 0;
+            width: 56%;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -1;
+          }
+        }
+
+        .card-title {
+          font-weight: bold;
+          color: rgba(255,255,255, 1);
+          display: flex;
+          justify-content: space-between;
+
+          .text-right {
+            color: rgba(2,119,189, 1);
+          }
+        }
+      }
+    }
+
+    .cs-profit-box {
+      &.card {
+        border: none;
+        box-shadow: 0 0 6px 0.1px rgba(0,105,92, 1);
+        position: relative;
+
+        .card-header {
+          z-index: 1;
+
+          &:before {
+            position: absolute;
+            background: rgba(0,105,92, 1);
+            content: '';
+            top: 0;
+            left: 0;
+            width: 56%;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -1;
+          }
+        }
+
+        .card-title {
+          font-weight: bold;
+          color: rgba(255,255,255, 1);
+          display: flex;
+          justify-content: space-between;
+
+          .text-right {
+            color: rgba(0,105,92, 1);
+          }
+        }
+      }
+    }
+
+    .cs-project-realizations-box {
+      &.card {
+        border: none;
+        box-shadow: 0 0 6px 0.1px rgba(69,39,160, 1);
+        position: relative;
+
+        .card-header {
+          z-index: 1;
+
+          &:before {
+            position: absolute;
+            background: rgba(69,39,160, 1);
+            content: '';
+            top: 0;
+            left: 0;
+            width: 65%;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -1;
+          }
+        }
+
+        .card-title {
+          font-weight: bold;
+          color: rgba(255,255,255, 1);
+          display: flex;
+          justify-content: space-between;
+
+          .text-right {
+            color: rgba(69,39,160, 1);
+          }
+        }
+      }
+    }
+
+    .cs-invoices-number-box {
+      &.card {
+        border: none;
+        box-shadow: 0 0 6px 0.1px rgba(216,67,21, 1);
+        position: relative;
+
+        .card-header {
+          z-index: 1;
+
+          &:before {
+            position: absolute;
+            background: rgba(216,67,21, 1);
+            content: '';
+            top: 0;
+            left: 0;
+            width: 65%;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -1;
+          }
+        }
+
+        .card-title {
+          font-weight: bold;
+          color: rgba(255,255,255, 1);
+          display: flex;
+          justify-content: space-between;
+
+          .text-right {
+            color: rgba(216,67,21, 1);
+          }
+        }
+      }
+    }
+  }
+}

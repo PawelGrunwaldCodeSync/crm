@@ -1,0 +1,28 @@
+.container {
+  background: #FDFDFD;
+  padding: .5rem;
+  box-sizing: border-box;
+
+  .main-router-view {
+    border-radius: 3px;
+    box-shadow: 0 0 5px .01px rgba(0,0,0, .1);
+    background: #FFFFFF;
+    height: calc(100vh - 1.5rem);
+  }
+
+  .router-enter-active {
+    transition: transform .3s ease-in-out;
+  }
+
+  .router-leave-active {
+    transition: opacity .15s ease-in-out;
+  }
+
+  .router-enter {
+    transform: translateX(100vw);
+  }
+
+  .router-leave-to {
+    opacity: 0;
+  }
+}
