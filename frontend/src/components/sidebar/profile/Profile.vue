@@ -5,7 +5,6 @@
     </div>
     <div class="cs-profile-data">
       <p>Jan Kowalski</p>
-      <p>jan.kowalski@gmail.com</p>
       <p>PHP Developer</p>
     </div>
   </div>
