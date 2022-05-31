@@ -2,45 +2,6 @@
   <div class="cs-panel">
     <CSHeader :title="title" />
     <div class="cs-panel-body">
-<!--      <div class="columns mt-2">-->
-<!--        <div class="column col-3">-->
-<!--          <div class="datepicker-box">-->
-<!--            <cs-date-picker-->
-<!--                v-model="filters.dateFrom"-->
-<!--                mode="date"-->
-<!--                :masks="dateMask"-->
-<!--                :max-date="filters.maxDateFrom"-->
-<!--            >-->
-<!--              <template v-slot="{ inputValue, inputEvents, togglePopover }">-->
-<!--                <div class="datepicker-template">-->
-<!--                  <input-->
-<!--                      class="datepicker-input"-->
-<!--                      :value="inputValue"-->
-<!--                      @click="togglePopover()"-->
-<!--                  />-->
-<!--                </div>-->
-<!--              </template>-->
-<!--            </cs-date-picker>-->
-<!--            <cs-date-picker-->
-<!--                v-model="filters.dateTo"-->
-<!--                mode="date"-->
-<!--                :masks="dateMask"-->
-<!--                :max-date="new Date()"-->
-<!--                :min-date="filters.minDateTo"-->
-<!--            >-->
-<!--              <template v-slot="{ inputValue, inputEvents, togglePopover }">-->
-<!--                <div class="datepicker-template">-->
-<!--                  <input-->
-<!--                      class="datepicker-input"-->
-<!--                      :value="inputValue"-->
-<!--                      @click="togglePopover()"-->
-<!--                  />-->
-<!--                </div>-->
-<!--              </template>-->
-<!--            </cs-date-picker>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
       <div class="columns mt-2">
         <div class="column col-3">
           <div class="cs-income-box card">
