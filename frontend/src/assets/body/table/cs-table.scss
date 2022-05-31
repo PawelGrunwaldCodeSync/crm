@@ -1,0 +1,18 @@
+.table {
+  thead {
+    th {
+      font-size: .75rem;
+    }
+  }
+
+  tbody {
+    td {
+      font-size: .65rem;
+      a {
+        &::after {
+          font-size: .6rem;
+        }
+      }
+    }
+  }
+}
