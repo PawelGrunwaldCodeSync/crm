@@ -81,13 +81,13 @@ export default {
         ],
         body: [
             [
-                '0001/05/2022/PG', '2022-05-31', 'Codema', { icon: 'download', title: 'Pobierz fakturę', 'url': '' },
+                '0001/05/2022/PG', '2022-05-31', 'Test', { icon: 'download', title: 'Pobierz fakturę', 'url': '' },
             ],
             [
-              '0001/05/2022/PG', '2022-05-31', 'Codema', { icon: 'download', title: 'Pobierz fakturę', 'url': '' },
+              '0001/05/2022/PG', '2022-05-31', 'Test', { icon: 'download', title: 'Pobierz fakturę', 'url': '' },
             ],
             [
-              '0001/05/2022/PG', '2022-05-31', 'Codema', { icon: 'download', title: 'Pobierz fakturę', 'url': '' },
+              '0001/05/2022/PG', '2022-05-31', 'Test', { icon: 'download', title: 'Pobierz fakturę', 'url': '' },
             ],
         ]
       }
